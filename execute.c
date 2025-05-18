@@ -59,7 +59,6 @@ void	parent_process(t_pipexcmd *current, int *fd_prepipe)
         dup2(cmds->infile, STDIN_FILENO);
         close(cmds->infile);
     }
->>>>>>> f813a4cc411a0fad719f3d100966b6a217cf04ec
 }
 
 void	process_commands(t_pipexcmd *cmds, t_pipexcmd *current, int *fd_prepipe,
