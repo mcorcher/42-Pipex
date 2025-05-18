@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcorcher <mcorcher@student.42madrid.com    +#+  +:+       +#+         #
+#    By: mcorcher <mcorcher@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/12 11:12:31 by mcorcher          #+#    #+#              #
-#    Updated: 2025/05/13 18:13:45 by mcorcher         ###   ########.fr        #
+#    Updated: 2025/05/18 19:01:09 by mcorcher         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,9 @@ CCFLAGS = -Wall -Wextra -Werror -g3
 SRC = main.c \
 	cmd_parse.c \
 	path_utils.c \
-	execute.c
+	execute.c \
+	execute_utils.c\
+	cmd_utils.c\
 
 OBJ = $(SRC:.c=.o)
 
